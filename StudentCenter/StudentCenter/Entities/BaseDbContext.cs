@@ -9,6 +9,10 @@ namespace StudentCenter.Entities
 {
     public class BaseDbContext : DbContext
     {
+        public BaseDbContext(DbContextOptions<BaseDbContext> options)
+            : base(options)
+        { }
+
         //public DbSet<Restaurant> Restaurants { get; set; }
 
         //public DbSet<Address> Addresses { get; set; }

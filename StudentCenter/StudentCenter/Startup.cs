@@ -36,7 +36,8 @@ namespace StudentCenter
             });
 
             services.AddDbContext<BaseDbContext>(options =>
-        options.UseSqlServer(Configuration.GetConnectionString("DefaultDatabase")));
+                options.UseSqlServer(Configuration.GetConnectionString("DefaultDatabase"))
+            );
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
